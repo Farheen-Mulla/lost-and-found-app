@@ -21,7 +21,7 @@ It lets users add items that are lost or found, and view them in a clean card la
 ---
 
 ## 🚀 Live Demo  
-👉 [View App](https://Farheen-Mulla.github.io/lost-found-app/)
+👉 [View App](https://farheen-mulla.github.io/lost-and-found-app/)
 
 ---
 
