@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost-Found-App</title>
+    <link  rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+</head>
+<body>
+  
+  <div class="fullPage">
+    <div class="nav">
+      <h1>FindIt</h1>
+      <div class="searchItem">
+        <input type="text" id="searchbar" placeholder="Search Items...">
+        <select id="FilterType">
+          <option value="All">All</option>
+          <option value="Lost">Lost</option>
+          <option value="Found">Found</option>
+        </select>
+      </div>
+    </div>
+    
+   
+
+   <div class="mainSection">
+    <div class="form-container">
+     <p id="formHeading">Fill Item Information :</p>
+     <form id="item-form">
+        <input type=" text" placeholder="Item Name" id="ItemName" required>
+        <input type=" text" placeholder="Item Description" id="ItemDesc" required>
+        <input type=" text" placeholder="Contact Info" id="ItemContact" required>
+        <label for="ItemImage" class="custom-file-label">Upload Image</label>
+        <input type="file" id="ItemImage" accept="image/*">
+        <select id="item-type">
+          <option value="Lost">Lost</option>
+          <option value="Found">Found</option>
+        </select>
+        <button type="submit">Add Item</button>
+      </form>
+    </div>
+    <div class="itemlist">
+     <p id="listHeading">List of Lost / Found Items :</p>
+     <div id="itemcard-container">
+      
+      <div class="item-card">
+        <div class="item-top-part">
+          <div class="item-name-desc">
+            <p class="NameofItem">Blue Water Bottle</p>
+            <p class="descofItem">A blue , Stainless steel water bottle.</p>
+          </div>
+        <div class="item-actions">
+          <span class="dots">...</span>
+          <div class="dropdown hidden">
+            <button class="edit-button">Edit</button>
+            <button class="delete-button">Delete</button>
+          </div>
+        </div>
+        </div>
+        <div class="itemFooter">
+          <p>Info: john.doe@example.com</p>
+          <span class="Lost-status">Lost</span>
+        </div>
+      </div>
+
+      <div class="item-card">
+        <div class="item-top-part">
+          <div class="item-name-desc">
+            <p class="NameofItem">Grey Wallet</p>
+          <p class="descofItem">A grey , leather wallet.</p>
+          </div>
+        <div class="item-actions">
+          <span class="dots">...</span>
+          <div class="dropdown hidden">
+            <button class="edit-button">Edit</button>
+            <button class="delete-button">Delete</button>
+          </div>
+        </div>
+        </div>
+        <div class="itemFooter">
+          <p>Info: alice.doe@example.com</p>
+          <span class="Found-status">Found</span>
+        </div>
+      </div>
+
+      <div class="item-card">
+        <div class="item-top-part">
+          <div class="item-name-desc">
+            <p class="NameofItem">Set of Keys</p>
+            <p class="descofItem">A set of silver keys with a red keychain.</p>
+          </div>
+        <div class="item-actions">
+          <span class="dots">...</span>
+          <div class="dropdown hidden">
+            <button class="edit-button">Edit</button>
+            <button class="delete-button">Delete</button>
+          </div>
+        </div>
+        </div>
+        <div class="itemFooter">
+          <p>Info: jiya.doe@example.com</p>
+          <span class="Lost-status">Lost</span>
+        </div>
+      </div>
+
+      <div class="item-card">
+        <div class="item-top-part">
+          <div class="item-name-desc">
+            <p class="NameofItem">Grey Backpack</p>
+          <p class="descofItem">A Grey Nike backpack with books inside.</p>
+          </div>
+        <div class="item-actions">
+          <span class="dots">...</span>
+          <div class="dropdown hidden">
+            <button class="edit-button">Edit</button>
+            <button class="delete-button">Delete</button>
+          </div>
+        </div>
+        </div>
+        <div class="itemFooter">
+          <p>Info: xyz.doe@example.com</p>
+          <span class="Found-status">Found</span>
+        </div>
+      </div>
+
+      <div class="item-card">
+        <div class="item-top-part">
+          <div class="item-name-desc">
+            <p class="NameofItem">Black Umbrella</p>
+            <p class="descofItem">A black umbrella , left in Cafetaria.</p>
+          </div>
+        <div class="item-actions">
+          <span class="dots">...</span>
+          <div class="dropdown hidden">
+            <button class="edit-button">Edit</button>
+            <button class="delete-button">Delete</button>
+          </div>
+        </div>
+        </div>
+        <div class="itemFooter">
+          <p>Info: abc.doe@example.com</p>
+          <span class="Found-status">Found</span>
+        </div>
+      </div>
+
+    </div>
+   </div>
+
+   </div>
+
+   <div class="footer">
+    <div class="footer-batch">
+      <h1 class="footer-logo">FindIt</h1>
+      <p>"Helping you reunite with your item safely."</p>
+    </div>
+    <div class="footer-contact">
+      <h3>Contact & Support</h3>
+      <div class="contactDetails">
+        <p>support@lostfoundapp.com</p>
+        <p>+1(555)123-4567</p>
+      </div>
+    </div>
+
+   </div>
+   
+   
+  </div> 
+
+<script src="script.js"></script>
+</body>
+</html>
