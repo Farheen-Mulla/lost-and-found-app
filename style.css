@@ -304,6 +304,77 @@ form select , button , input{
 
 
 
+
+@media (max-width: 768px) {
+   body{
+    padding: 0 10px;
+   }
+  .mainSection {
+    flex-direction: column;   
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .form-container,
+  .itemlist {
+    width: 90%;        
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;      
+  }
+
+  .searchItem {
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  .searchItem input {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+  }
+
+  #formHeading,
+  #listHeading,
+  #searchHeading {
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+  }
+
+  .searchItem {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .searchItem input,
+  .searchItem select {
+    width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .footer-batch p {
+    font-size: 1rem;
+  }
+
+  .footer-contact h3 {
+    font-size: 1.2rem;
+  }
+}
+
+
+
 /* .item-top-part, .item-name-desc {
   border: 1px dashed red;
 }
